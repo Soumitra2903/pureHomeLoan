@@ -8,6 +8,7 @@ import { IncomeDetails } from './income-details';
 import { LoanDetails } from './loan-details';
 import { ApplicationDetails } from './application-details';
 import { Account } from './account';
+import { Loandetails } from './loandetails';
 @Injectable({
   providedIn: 'root'
 })
@@ -52,11 +53,20 @@ export class PersonaldetailsService {
    accountdetailsByUserName(username: any):Observable<Account>{
     return this.httpClient.get<Account>(this.apiServer+'/UserDashBoard/'+username)
    }
+   statusByApplicationId(applicationId:any):Observable<Loandetails>{
+     return this.httpClient.get<Loandetails>(this.apiServer+'/LoanTracker/'+applicationId)
+   }
 
   login(register:Personaldetails){
     return this.httpClient.post(this.apiServer + '/PersonalDetails/login/', JSON.stringify(register), this.httpOptions)
     
   } 
+  // track(phoneNumber:any){
+  //   return this.httpClient.post(this.apiServer+'/LoanTracker/LoanTracker',JSON.stringify(phoneNumber),this.httpOptions)
+  // }
+  trackLoan(applicationId:any){
+    return this.httpClient.post(this.apiServer+'/LoanTracker/Track',JSON.stringify(applicationId),this.httpOptions)
+  }
   GetId(name:string){
     return this.httpClient.get<number>(this.apiServer+'/LoanDetails/'+name);
   }

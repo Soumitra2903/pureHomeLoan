@@ -28,6 +28,7 @@ import { EligibiltycalculatorComponent } from './eligibiltycalculator/eligibilty
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { HttpClientModule } from '@angular/common/http';
 import { LoantrackerComponent } from './loantracker/loantracker.component';
+import { StatusComponent } from './status/status.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { LoantrackerComponent } from './loantracker/loantracker.component';
     RecoverpasswordComponent,
     PasswordsuccessfulComponent,
     EligibiltycalculatorComponent,
-    LoantrackerComponent
+    LoantrackerComponent,
+    StatusComponent
  
   ],
   imports: [

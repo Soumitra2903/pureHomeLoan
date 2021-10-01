@@ -20,6 +20,10 @@ table {
   height: 250px;
   
 }
+.value{
+  text-align: center;
+    vertical-align: middle;
+}
 .button {
   background-color: #e747a4;
   border: none;

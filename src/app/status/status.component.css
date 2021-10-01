@@ -1,0 +1,24 @@
+/* .container{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0rem;
+} */
+.details{
+    display: flex;
+    justify-content: center;
+  }
+  .welcome{
+    display: flex;
+    justify-content: center;
+    margin: 150px 155px 1px 165px;
+    padding: 10px;
+}
+td {
+    height: 80px;
+    width: 160px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .status {
+    border-top: 2px solid rgb(231, 145, 191);
+}

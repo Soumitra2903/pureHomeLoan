@@ -1,7 +1,7 @@
 <p>loantracker works!</p>
 <p>userdash works!</p>
 <div class="container">
-    <form [formGroup]="LoanTrackingForm"  novalidate>
+    <form [formGroup]="LoanTrackingForm" (ngSubmit)="submit()"  >
         <div>
             <label for="applicationid"><b>Application ID</b> </label>
             <input type="text" id="applicationid" formControlName="ApplicationNumber">
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="track">
-            <button class="registerbtn" type="submit" >Track</button>
+            <button class="registerbtn" type="submit"  >Track</button>
         </div>
     </form>
 </div>
