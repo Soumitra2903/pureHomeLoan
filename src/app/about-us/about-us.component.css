@@ -1,0 +1,24 @@
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: relative;
+    top: 87%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
+
+}
+.content-subhead {
+    color: deeppink;
+}
+.customer{
+    margin:0px 0px 0px 250px;
+}
+.image {
+    
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+    position: relative;
+    
+}
