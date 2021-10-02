@@ -2,6 +2,7 @@
 <p>userdash works!</p>
 <div class="container">
     <form [formGroup]="LoanTrackingForm" (ngSubmit)="submit()"  >
+        <h3>{{message}}</h3>
         <div>
             <label for="applicationid"><b>Application ID</b> </label>
             <input type="text" id="applicationid" formControlName="ApplicationNumber">
